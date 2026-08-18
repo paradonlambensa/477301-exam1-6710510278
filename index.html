@@ -8,9 +8,7 @@
 </head>
 <body>
     <header>
-        <section id="index">
-            <h1>Boot Shop</h1>
-        </section>
+        <h1>Boot Shop</h1>
         <nav>
             <ul>
                 <li><a href="#index">Home</a></li>
@@ -45,8 +43,8 @@
             <caption>Product List</caption>
             <thead>
                 <tr>
-                    <th>Product</th>
-                    <th>Price</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
                 </tr>
             </thead>
             <tbody>
@@ -65,21 +63,19 @@
             </tbody>
         </table>
         <ul>
-            <li>Boot 1
-                <p>Price: $100</p>
-            </li>
-            <li>Boot 2
-                <p>Price: $120</p>
-            </li>
-            <li>Boot 3
-                <p>Price: $150</p>
-            </li>
+            <li>Open days: Monday - Saturday</li>
+            <li>Open hours: 9:00 AM - 6:00 PM</li>
+            <li>Contact: +1 234 567 890</li>
         </ul>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" required>
+        <fieldset>
+            <legend>Contact Form</legend>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="100" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
             <label for="gender">Gender:</label>
             <select id="gender" name="gender" required>
                 <option value="">Select Gender</option>
@@ -90,11 +86,13 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" required><br><br>
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" required></textarea><br><br>
             <button type="submit">Submit</button>
-        </form>
+                <h2>Contact Us</h2>
+            </form>
+        </fieldset>
     </main>
     <footer>
         <p>ภราดร หลำเบ็นสะ 6710510278</p>
